@@ -1,0 +1,125 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 420px;
+  width: 100%;
+
+  &__link-back {
+    width: fit-content;
+    margin-bottom: 16px;
+    
+    position: relative;
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.2;
+    color: #363A43;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:after {
+      content: url('./arrow.svg');
+
+      position: absolute;
+
+      left: -20px;
+      top: 0;
+      bottom: 0;
+
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #363A43;
+  }
+
+  &__title-description {
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #363A43;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 48px;
+
+    background: #000;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &__separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 16px;
+
+    position: relative;
+
+    &:after, &:before {
+      content: '';
+      width: 140px;
+      height: 1px;
+
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+
+      margin-top: auto;
+      margin-bottom: auto;
+
+      background: #E4E6EC;
+    }
+
+    &:after {
+      left: 0;
+    }
+
+    &:before {
+      right: 0;
+    }
+  }
+
+  &__separator-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666C7B;
+  }
+
+  &__description {
+    padding: 12px 16px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: #666C7B;
+    
+    background: #FFFFFF;
+
+    border: 1px solid #E4E6EC;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+}
